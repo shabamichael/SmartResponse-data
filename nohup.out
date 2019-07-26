@@ -1,0 +1,35 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.6.RELEASE)
+
+2019-07-04 22:53:43.922  INFO 25739 --- [           main] c.s.r.SmartResponseDataApplication       : Starting SmartResponseDataApplication v0.0.1 on michael-HP-ProBook-450-G2 with PID 25739 (/home/michael/Documents/workspace-spring-tool-suite-4-4.2.2.RELEASE/SmartResponse-data/target/SmartResponse-data-0.0.1.jar started by michael in /home/michael/Documents/workspace-spring-tool-suite-4-4.2.2.RELEASE/SmartResponse-data)
+2019-07-04 22:53:43.927  INFO 25739 --- [           main] c.s.r.SmartResponseDataApplication       : No active profile set, falling back to default profiles: default
+2019-07-04 22:53:45.745  INFO 25739 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 22:53:45.852  INFO 25739 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91ms. Found 2 repository interfaces.
+2019-07-04 22:53:46.514  INFO 25739 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$312510ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 22:53:47.083  INFO 25739 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5050 (http)
+2019-07-04 22:53:47.138  INFO 25739 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 22:53:47.139  INFO 25739 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 22:53:47.326  INFO 25739 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 22:53:47.327  INFO 25739 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3228 ms
+2019-07-04 22:53:47.875  INFO 25739 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 22:53:47.881  WARN 25739 --- [           main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2019-07-04 22:53:48.852  INFO 25739 --- [           main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2019-07-04 22:53:48.855  INFO 25739 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 22:53:48.938  INFO 25739 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-04 22:53:49.097  INFO 25739 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-04 22:53:49.100  INFO 25739 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-04 22:53:49.307  INFO 25739 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-04 22:53:49.645  INFO 25739 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2019-07-04 22:53:51.621  INFO 25739 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 22:53:52.807  INFO 25739 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 22:53:52.914  WARN 25739 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 22:53:53.328  INFO 25739 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5050 (http) with context path ''
+2019-07-04 22:53:53.331  INFO 25739 --- [           main] c.s.r.SmartResponseDataApplication       : Started SmartResponseDataApplication in 10.649 seconds (JVM running for 12.098)

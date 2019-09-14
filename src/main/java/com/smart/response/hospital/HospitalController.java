@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.smart.response.patients.pregnancy.PregnancyController;
+
 
 /**
  * @author Michael Shaba
@@ -47,7 +47,7 @@ public class HospitalController {
 
 	// Return Just one Hospital by ID
 	@RequestMapping("/hospitals/{id}")
-	public Hospitals GetOneHospitalById(@PathVariable String id) {
+	public Hospitals GetOneHospitalById(@PathVariable long id) {
 		return hospitalService.FindOneHospitalById(id);
 	}
 
@@ -60,14 +60,14 @@ public class HospitalController {
 
 	// Update an existing Hospital
 	@RequestMapping(method = RequestMethod.PUT, value = "/hospitals/{id}")
-	public void UpdateExistingHospital(@PathVariable String id, @RequestBody Hospitals hospital) {
+	public void UpdateExistingHospital(@PathVariable long id, @RequestBody Hospitals hospital) {
 		hospitalService.UpdateHospital(id, hospital);
 
 	}
 
 	// Deletes an Hospital from the list
 	@RequestMapping(method = RequestMethod.DELETE, value = "/hospitals/{id}")
-	public void DeleteHospital(@PathVariable String id) {
+	public void DeleteHospital(@PathVariable long id) {
 		hospitalService.DeleteHospitalById(id);
 
 	}

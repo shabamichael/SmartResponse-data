@@ -38,7 +38,7 @@ public class AmbulanceController {
 	
 	@RequestMapping("/")
 	public String home() {
-		return "<h2>Welcome to the Ambulances section of the Rest API</h2>";
+		return "<h2>Welcome to the Ambulances section of the Emergency Response Rest API</h2>";
 		
 	}
 

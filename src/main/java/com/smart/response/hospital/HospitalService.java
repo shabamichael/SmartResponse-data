@@ -24,24 +24,17 @@ public class HospitalService {
 	
 	public Hospitals hospital1 =  new Hospitals();
 	
-	private List<Hospitals>hospitalList =  new ArrayList<> (Arrays.asList(
-			new Hospitals("22","Idorenyin","Michael", "Shaba", "Akpabio",
-					"23","Idorenyin","Michael", "Shaba", "Akpabio","Thanks"),
-			new Hospitals("25","Idorenyin","Michael", "Shaba", "Akpabio",
-			"27","Idorenyin","Michael", "Shaba", "Akpabio","Thanks"),
-			new Hospitals("24","Idorenyin","Michael", "Shaba", "Akpabio",
-					"292","Idorenyin","Michael", "Shaba", "Akpabio","Thanks"),
-			new Hospitals("25","Idorenyin","Michael", "Shaba", "Akpabio",
-					"26","Idorenyin","Michael", "Shaba", "Akpabio","Thanks")));
-	
+		
 	public List<Hospitals> FindAllHospitals() {
 	//return hospitalList;
 		List<Hospitals>hospitals = new ArrayList<>();
 		hospitalRepository.findAll().forEach(hospitals::add);
+		
 		return hospitals;
 	}
 	
-	public Hospitals FindOneHospitalById(String id) {
+	
+	public Hospitals FindOneHospitalById(long id) {
 		return hospitalRepository.findById(id).get();
 		
 		//return 	hospitalList.stream().filter
@@ -62,7 +55,7 @@ public class HospitalService {
 		hospitalRepository.save(hospital);
 	}
 
-	public void UpdateHospital(String id, Hospitals hospital) {
+	public void UpdateHospital(long id, Hospitals hospital) {
 		/*
 		 * for(int i=0; i < hospitalList.size(); i++) { hospital1 = hospitalList.get(i)
 		 * ; if (hospital.getHospitalId().equalsIgnoreCase(id)) { hospitalList.set(i,
@@ -71,7 +64,7 @@ public class HospitalService {
 		hospitalRepository.save(hospital);
 	}
 
-	public void DeleteHospitalById(String id) {
+	public void DeleteHospitalById(long id) {
 		// hospitalList.removeIf(hosp -> hosp.getHospitalId().equals(id));
 		hospitalRepository.deleteById(id);
 	}

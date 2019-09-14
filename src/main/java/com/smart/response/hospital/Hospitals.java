@@ -5,8 +5,12 @@ package com.smart.response.hospital;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /**
@@ -19,7 +23,12 @@ import javax.persistence.Table;
 public class Hospitals implements Serializable{
 	
 	@Id
-	private String hospitalId;
+
+	@SequenceGenerator(
+			name="hosp_seq", initialValue = 1000, allocationSize=100 )
+	@GeneratedValue(strategy = GenerationType.SEQUENCE , generator = "hosp_seq")
+	@Column(name="hospitalId", updatable=false, nullable=false )
+	private long hospitalId;
 	private String hospitalName;
 	private String hospitalRegNo;
 	private String hospitalPhoneNo;
@@ -53,7 +62,7 @@ public class Hospitals implements Serializable{
 	 * @param hospitalCity
 	 * @param hospitalProvince
 	 */
-	public Hospitals(String hospitalId, String hospitalName, String hospitalRegNo, String hospitalPhoneNo,
+	public Hospitals(long hospitalId, String hospitalName, String hospitalRegNo, String hospitalPhoneNo,
 			String hospitalEmail, String hospitalAddress1, String hospitalAddress2, String hospitalAddress3,
 			String hospitalSurburb, String hospitalCity, String hospitalProvince) {
 		super();
@@ -74,7 +83,7 @@ public class Hospitals implements Serializable{
 	/**
 	 * @return the hospitalId
 	 */
-	public String getHospitalId() {
+	public long getHospitalId() {
 		return hospitalId;
 	}
 
@@ -82,7 +91,7 @@ public class Hospitals implements Serializable{
 	/**
 	 * @param hospitalId the hospitalId to set
 	 */
-	public void setHospitalId(String hospitalId) {
+	public void setHospitalId(long hospitalId) {
 		this.hospitalId = hospitalId;
 	}
 

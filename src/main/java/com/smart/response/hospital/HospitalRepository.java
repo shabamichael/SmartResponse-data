@@ -9,6 +9,6 @@ import org.springframework.data.repository.CrudRepository;
  * @author Michael Shaba
  *
  */
-public interface HospitalRepository extends CrudRepository<Hospitals, String>{
+public interface HospitalRepository extends CrudRepository<Hospitals, Long>{
 
 }

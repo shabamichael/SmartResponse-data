@@ -1,9 +1,15 @@
 com/smart/response/ambulance/Ambulances.class
 com/smart/response/ambulance/AmbulanceRepository.class
+com/smart/response/pregnancy/Pregnancy.class
 com/smart/response/SmartResponseDataApplication.class
 com/smart/response/ambulance/AmbulanceController.class
 com/smart/response/hospital/HospitalController.class
 com/smart/response/hospital/HospitalService.class
-com/smart/response/hospital/Hospitals.class
 com/smart/response/hospital/HospitalRepository.class
+com/smart/response/database/DBConnection.class
+com/smart/response/pregnancy/PregnancyController.class
+com/smart/response/pregnancy/PregnancyRepository.class
+com/smart/response/hospital/Hospitals.class
 com/smart/response/ambulance/AmbulanceService.class
+com/smart/response/pregnancy/PregnancyService.class
+com/smart/response/doctors/Doctors.class
